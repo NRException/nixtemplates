@@ -25,13 +25,5 @@ pkgs.mkShellNoCC {
 
   shellHook = ''
     echo -e $GREETING 
-    
-    bumpVersionMinor() {
-        echo "Updating Changelog..."
-        changelogger update 
-
-        echo "Bumping tag version..."
-        bumpTagVersion "MINOR"
-    }
   '';
 }
