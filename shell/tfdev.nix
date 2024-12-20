@@ -15,10 +15,8 @@ pkgs.mkShellNoCC {
     terraspace      # For terraspace.
     terraform-docs  # For generating automatic terraform module documentation.
     commitizen      # For version bumping and commit management.  
-    cz-cli          # Ditto as above, but CICD friendly.
-    neovim          # For development / writing code. You're intended to use your own dotfiles here for this.
     python3         # For pre-commit.
-    pre-commit      # Just incase we want to use pre-commit hooks later on down the road.
+    pre-commit      # for pre-commit.
   ];
 
   GREETING = ''=== Welcome to the nix cicd shell for tf  ==='';
